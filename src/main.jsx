@@ -5,7 +5,7 @@ import './style.css';
 import {ArchiveManager,readArchived} from './ArchiveManager';
 
 const HUB = "Money Flow";
-const MODES = [["saving","Saving","https://saving-flow.pages.dev/"],["income","Income","https://income-flow.pages.dev/"],["memory","Memory Lab","https://memory-lab.pages.dev/"]].map(([id,label,url])=>({id,label,defaultUrl:url}));
+const MODES = [["memory","Memory Lab","https://memory-lab.pages.dev/"],["saving","Saving","https://saving-flow.pages.dev/"],["income","Income","https://income-flow.pages.dev/"]].map(([id,label,url])=>({id,label,defaultUrl:url}));
 const STORAGE_KEY = 'flow-hub-links-v1-' + HUB.toLowerCase().replace(/\W+/g,'-');
 const sanitizeUrl = value => {
   try {
